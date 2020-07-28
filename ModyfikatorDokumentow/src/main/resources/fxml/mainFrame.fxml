@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.pentacomp.ModyfikatorDokumentow.view.MainFrameFxmlController">
+   <children>
+      <Label layoutX="48.0" layoutY="25.0" text="Modyfikator Dokumentów">
+         <font>
+            <Font name="Bodoni MT" size="63.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="processingTextArea" layoutX="406.0" layoutY="200.0" prefHeight="326.0" prefWidth="364.0" />
+      <ProgressBar fx:id="processingProgressBar" layoutX="406.0" layoutY="138.0" prefHeight="36.0" prefWidth="364.0" progress="0.0" />
+      <Button fx:id="chooseSourcePathButton" onAction="#setChooseSourcePathButtonActionListener" layoutX="117.0" layoutY="350.0" mnemonicParsing="false" text="Wybierz ścieżkę do folderu" />
+      <Button fx:id="startButton" onAction="#startButtonActionListener" layoutX="406.0" layoutY="544.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="163.0" text="Włącz" />
+      <Button fx:id="exitButton" onAction="#exitButtonActionListener" layoutX="607.0" layoutY="544.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="163.0" text="Wyjście" />
+      <CheckBox fx:id="subfoldersCheckBox" layoutX="25.0" layoutY="552.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="178.0" text="Czy przeszukiwać podfoldery" />
+      <Button fx:id="chooseDestinyPathButton" onAction="#setChooseDestinyPathButtonActionListener" layoutX="116.0" layoutY="415.0" mnemonicParsing="false" text="Wybierz ścieżkę docelową" />
+      <Label layoutX="86.0" layoutY="106.0" text="Instrukcja obsługi programu">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="138.0" text="1. Wybierz ścieżkę do folderu z plikami do modyfikacji używając" textFill="#aa1843" />
+      <Label layoutX="22.0" layoutY="156.0" text="przycisku - &quot;Wybierz ścieżkę do folderu&quot;." textFill="#aa1843" />
+      <Label layoutX="10.0" layoutY="211.0" text="3. Wczytaj plik konfiguracyjny z regułami modyfikacji dokumentu" textFill="#aa1843" />
+      <Label layoutX="22.0" layoutY="229.0" text="używając przycisku - &quot;Wczytaj plik kofiguracyjny&quot;." textFill="#aa1843" />
+      <Label layoutX="10.0" layoutY="247.0" text="4. Zaznacz okienko &quot;Czy przeszukiwać podfoldery&quot; jeśli chcesz " textFill="#aa1843" />
+      <Label layoutX="22.0" layoutY="265.0" text="modyfikować wszystkie pliki napotkane w podfolderach" textFill="#aa1843" />
+      <Label layoutX="22.0" layoutY="283.0" text="wczytanego folderu." textFill="#aa1843" />
+      <Label layoutX="10.0" layoutY="301.0" text="5. Zaznacz okienko &quot;Czy usuwać pierwotne pliki&quot; jeśli chcesz je usunąć." textFill="#aa1843" />
+      <Label layoutX="10.0" layoutY="319.0" text="6. Włącz program przy pomocy przycisku &quot;Włącz&quot;.  " textFill="#aa1843" />
+
+      <Button fx:id="chooseConfigurationFileButton" onAction="#setChooseConfigurationFileButtonActionListener" layoutX="116.0" layoutY="483.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="160.0" text="Wczytaj plik konfiguracyjny" />
+      <CheckBox fx:id="removeOldFilesCheckbox" layoutX="213.0" layoutY="553.0" mnemonicParsing="false" text="Czy usunąć pierwotne pliki" />
+      <Label fx:id="filesSourcePathLabel" layoutX="22.0" layoutY="378.0" prefHeight="26.0" prefWidth="358.0" />
+      <Label fx:id="filesDestinyPathLabel" layoutX="25.0" layoutY="447.0" prefHeight="26.0" prefWidth="358.0" />
+      <Label fx:id="configurationFilePathLabel" layoutX="25.0" layoutY="517.0" prefHeight="26.0" prefWidth="358.0" />
+      <Label layoutX="10.0" layoutY="175.0" text="2. Wybierz docelową ścieżkę dla wygenerowanych plików używając " textFill="#aa1843" />
+      <Label layoutX="22.0" layoutY="193.0" text="przycisku - &quot;Wybierz ścieżkę docelową&quot;" textFill="#aa1843" />
+   </children>
+</AnchorPane>
