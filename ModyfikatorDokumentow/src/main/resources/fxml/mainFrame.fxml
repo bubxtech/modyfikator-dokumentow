@@ -8,18 +8,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.pentacomp.ModyfikatorDokumentow.view.MainFrameFxmlController">
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.pentacomp.ModyfikatorDokumentow.view.MainFrameFxmlController">
    <children>
       <Label layoutX="48.0" layoutY="25.0" text="Modyfikator Dokumentów">
          <font>
             <Font name="Bodoni MT" size="63.0" />
          </font>
       </Label>
-      <TextArea fx:id="processingTextArea" layoutX="406.0" layoutY="200.0" prefHeight="326.0" prefWidth="364.0" />
-      <ProgressBar fx:id="processingProgressBar" layoutX="406.0" layoutY="138.0" prefHeight="36.0" prefWidth="364.0" progress="0.0" />
+      <TextArea fx:id="processingTextArea" layoutX="506.0" layoutY="200.0" prefHeight="326.0" prefWidth="364.0" />
+      <ProgressBar fx:id="processingProgressBar" layoutX="506.0" layoutY="138.0" prefHeight="36.0" prefWidth="364.0" progress="0.0" />
       <Button fx:id="chooseSourcePathButton" onAction="#setChooseSourcePathButtonActionListener" layoutX="117.0" layoutY="350.0" mnemonicParsing="false" text="Wybierz ścieżkę do folderu" />
-      <Button fx:id="startButton" onAction="#startButtonActionListener" layoutX="406.0" layoutY="544.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="163.0" text="Włącz" />
-      <Button fx:id="exitButton" onAction="#exitButtonActionListener" layoutX="607.0" layoutY="544.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="163.0" text="Wyjście" />
+      <Button fx:id="startButton" onAction="#startButtonActionListener" layoutX="506.0" layoutY="544.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="163.0" text="Włącz" />
+      <Button fx:id="exitButton" onAction="#exitButtonActionListener" layoutX="707.0" layoutY="544.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="163.0" text="Wyjście" />
       <CheckBox fx:id="subfoldersCheckBox" layoutX="25.0" layoutY="552.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="178.0" text="Czy przeszukiwać podfoldery" />
       <Button fx:id="chooseDestinyPathButton" onAction="#setChooseDestinyPathButtonActionListener" layoutX="116.0" layoutY="415.0" mnemonicParsing="false" text="Wybierz ścieżkę docelową" />
       <Label layoutX="86.0" layoutY="106.0" text="Instrukcja obsługi programu">
@@ -38,7 +38,7 @@
       <Label layoutX="10.0" layoutY="319.0" text="6. Włącz program przy pomocy przycisku &quot;Włącz&quot;.  " textFill="#aa1843" />
 
       <Button fx:id="chooseConfigurationFileButton" onAction="#setChooseConfigurationFileButtonActionListener" layoutX="116.0" layoutY="483.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="160.0" text="Wczytaj plik konfiguracyjny" />
-      <CheckBox fx:id="removeOldFilesCheckbox" layoutX="213.0" layoutY="553.0" mnemonicParsing="false" text="Czy usunąć pierwotne pliki" />
+      <CheckBox fx:id="removeSourceFilesCheckbox" layoutX="213.0" layoutY="553.0" mnemonicParsing="false" text="Czy usunąć pierwotne pliki" />
       <Label fx:id="filesSourcePathLabel" layoutX="22.0" layoutY="378.0" prefHeight="26.0" prefWidth="358.0" />
       <Label fx:id="filesDestinyPathLabel" layoutX="25.0" layoutY="447.0" prefHeight="26.0" prefWidth="358.0" />
       <Label fx:id="configurationFilePathLabel" layoutX="25.0" layoutY="517.0" prefHeight="26.0" prefWidth="358.0" />

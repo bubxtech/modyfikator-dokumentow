@@ -43,7 +43,7 @@ public class ModyfikatorDokumentowApplication extends Application {
 		rootNode = fxmlLoader.load();
 
 		primaryStage.setTitle(FRAME_TITLE);
-		Scene scene = new Scene(rootNode, 800, 600);
+		Scene scene = new Scene(rootNode);
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}

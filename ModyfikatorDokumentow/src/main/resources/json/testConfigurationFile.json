@@ -3,6 +3,9 @@
     "One" : "NewOne"
   },
   {
-    "Test przed zmiana" : "Po zmianie"
+    "Test przed zmiana" : "Po zmianie",
+    "<templateId root=\"2.16.840.1.113883.3.4424.13.10.4.60\"/>\n<id nullFlavor=\"NAV\"/>" : "<templateId root=\"2.16.840.1.113883.3.4424.13.10.4.60\"/>\n<id nullFlavor=\"NA\"/>",
+    "<nextMinor id=\"Tralala\">" : "<nextMinor id=\"Ugabuga\">",
+    "<whitespaceTest>\nAle ale ale ale" : "<whitespaceTest>\nTrolololo tro lo lo"
   }
 ]

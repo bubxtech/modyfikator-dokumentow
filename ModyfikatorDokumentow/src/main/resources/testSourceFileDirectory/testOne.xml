@@ -3,4 +3,13 @@
     <minor>
         Test przed zmiana
     </minor>
+    <templateId root="2.16.840.1.113883.3.4424.13.10.4.60"/>
+    <id nullFlavor="NAV"/>
+    <nextMinor id="Tralala">
+        Tralala
+    </nextMinor>
+
+    <whitespaceTest>
+                                    Ale ale ale ale
+    </whitespaceTest>
 </main>
