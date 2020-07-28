@@ -40,11 +40,6 @@ public class MainFrameFxmlController {
 
         fileChooser = new FileChooser();
         fileChooser.setInitialDirectory(APPLICATION_FOLDER_FILE);
-
-        // FOR TESTS
-        filesSourcePathLabel.setText(TestUtils.TEST_SOURCE_FOLDER_PATH);
-        filesDestinyPathLabel.setText(TestUtils.TEST_DESTINY_FOLDER_PATH);
-        configurationFilePathLabel.setText(TestUtils.TEST_CONFIGURATION_FILE_PATH);
     }
 
     /**********
